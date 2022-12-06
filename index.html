@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> *
+    <title>Mộc Thiên Hương </title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="Stylesheet" href="assets/change.css">
+    <link rel="Stylesheet" href="assets/themify-icons/themify-icons.css">
+    <style>
+        body {font-family: "Lato", sans-serif}
+        .mySlides {display: none}
+    </style>
+</head>
+<body>
+    <script src="style.js"></script>
+    <!--trangt đăng nhập-->
+    <section class=" js-login" id="login">
+        <!--Bắt Đầu Phần Hình Ảnh-->
+        <div class="img-bg">
+            <img src="assets/img/img1.png" alt="Hình Ảnh Minh Họa">
+        </div>
+        <!--Kết Thúc Phần Hình Ảnh-->
+        <!--Bắt Đầu Phần Nội Dung-->
+        <div class="noi-dung">
+            <div class="form">
+                <h2>Trang Đăng Nhập</h2>
+                <form action="">
+                    <div class="input-form">
+                        <span>Tên Người Dùng</span>
+                        <input type="text" name="">
+                    </div>
+                    <div class="input-form">
+                        <span>Mật Khẩu</span>
+                        <input type="password" name="">
+                    </div>
+                    <div class="nho-dang-nhap">
+                        <label><input type="checkbox" name=""> Nhớ Đăng Nhập</label>
+                    </div>
+                    <div class="input-form">
+                        <input type="submit" value="Đăng Nhập">
+                    </div>
+                    <div class="input-form">
+                        <p>Bạn Chưa Có Tài Khoản? <a href="#" onclick="clickOpenregister(), clickCloselogin()">Đăng Ký</a></p>
+                    </div>
+                </form>
+                <h3>Đăng Nhập Bằng Mạng Xã Hội</h3>
+                <ul class="icon-dang-nhap">
+                    <li><a href="https://www.facebook.com" class="ti-facebook"></a></li>
+                    <li><a href="" class="ti-google"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="close-login ti-close" onclick="clickCloselogin(), clickOpenheader()"></div>
+        <!--Kết Thúc Phần Nội Dung-->
+    </section>
+    <!--kết thúc trang đăng nhập-->
+    <!-- begin register -->
+    <section  class=" js-register" id="register">
+        <form action="action_page.php">
+            <div class="register-container">
+                <h1>Đăng kí tài khoản</h1>
+                <p>Vui lòng điền vào biểu mẫu này để tạo tài khoản.</p>
+                <hr>
+                <label for="email"><b>Email or Number phone</b></label>
+                <input type="text" placeholder="Enter Email or number phone" name="email" name="number" id="email" required>
+                <label for="psw"><b>Mật Khẩu</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+                <label for="psw-repeat"><b>Nhập lại mật khẩu</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+                <hr>
+                <!-- <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p> -->
+                <button type="submit" class="registerbtn">Đăng kí</button>
+            </div>
+            <div class="container signin">
+                <p>Bạn có sẵn tài khoản? <a href="#" onclick="clickOpenlogin(), clickCloseregister()">Đăng Nhập</a>.</p>
+            </div>
+        </form>
+    </section>
+    <!-- end register -->
+    <!--trang chính-->
+    <div class="">
+        <div id="header">
+            <div class="header">
+                <div class="hastask">
+                    <img src="./assets/img/img3.png" alt="" class="">
+                    <div class="dang-nhap" >
+                        <button class="js-show" type="submit"  onclick="clickOpenlogin(), clickCloseheader()">Đăng nhập</button>
+                        <button class="js-show" type="submit"  onclick="clickOpenregister(), clickCloseheader()">Đăng kí</button>
+                    </div>
+                </div>
+                <div class="menus">
+                    <a class="menu">trang chủ</a>
+                    <a class="menu">giới thiệu</a>
+                    <a class="menu">sản phẩm</a>
+                    <a class="menu">đánh giá</a>
+                    <a class="ti-search icon-search" id="icon-search." onclick="clickOpentextsearch(), clickCloseiconsearch()"></a>
+                    <input type="text" class="text-search" id="text-search.">
+                </div>
+                
+            </div>
+            <div class="body">
+                <div class="poster">
+                    <img src="./assets/img/img4.jpg" alt="" class="">
+                </div>
+                <div class="intros">
+                    <div class="intro" style="background: url(./assets/img/img6.jpg)">
+                        <h2 class="">feedback khách hàng</h2>
+                        <a href="" class="">xem thêm tại đây</a>
+                        <!-- <div class="lop-phu"></div> -->
+                    </div>
+                    <!-- <div class="lop-phu"></div> -->
+                    <div class="intro" style="background: url(./assets/img/img6.jpg)">
+                        <h2 class="">cách dùng sản phẩm</h2>
+                        <a href="" class="">xem thêm tại đây</a>
+                    </div>
+                    <div class="intro" style="background: url(./assets/img/img6.jpg)">
+                        <h2 class="">tuyển sỉ cực ưu đãi</h2>
+                        <a href="" class="">xem thêm tại đây</a>
+                    </div>
+                </div>
+                <div class="san-pham-noi-bat">
+                    <img src="" alt="" class="">
+                </div>
+                <div class="poster">
+                    <img src="./assets/img/img5.png" alt="" class="">
+                </div>
+                <div class="div product">
+                    <div class="div list-product">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <img src="./assets/img/img-login.png" alt="" class="lun"> -->
+    <!--kết thúc trang chính-->
+</body>
+</html>
